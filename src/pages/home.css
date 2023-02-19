@@ -1,0 +1,11 @@
+.homepage {
+    width: 100%;
+    height: 100vh;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+}
+
+.filepath {
+    color: #949494;
+    font-size: 12px;
+}
