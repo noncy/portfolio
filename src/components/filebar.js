@@ -1,6 +1,6 @@
 import React from 'react';
 import './filebar.css';
-import close from './close.svg'
+
 
 class Idefile extends React.Component {
     constructor(props) {

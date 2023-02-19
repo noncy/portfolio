@@ -57,6 +57,11 @@ class Sidebar extends React.Component {
                 <h3>EXPLORER</h3>     
                 <div className="current">
                     <Folder foldername = {'OPEN PAGES'}>
+                        {this.props.openFiles.map((file) => {
+                            return (
+                                <File handleCloseFile = {this.props.handleCloseFile} handleSelected = {this.props.handleSelected} selectedFile = {this.props.selectedFile} filename = {file} />
+                            )
+                        })}
                     </Folder>
                 </div>
                 

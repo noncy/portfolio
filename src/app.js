@@ -2,7 +2,8 @@ import React from 'react';
 
 import Nav from './components/nav';
 import Sidebar from './components/sidebar';
-import Filebar from './components/filebar'
+import Filebar from './components/filebar';
+import Home from './pages/home';
 
 
 class App extends React.Component {
@@ -29,16 +30,19 @@ class App extends React.Component {
     handleCloseFile = (filename) => {
         let index = this.state.openFiles.indexOf(filename);
         console.log(this.state.openFiles, index)
-        this.setState({openFiles: [this.state.openFiles.splice(index, 0)]});
+        this.state.openFiles.splice(index, 1);
     }
 
     render() {
         return(
             <>
             <Nav />
-            <div className='content'>
-            <Sidebar handleOpenFile = {this.handleOpenFile} handleSelected = {this.handleSelected} selectedFile = {this.state.selectedFile} />
-            <Filebar handleCloseFile = {this.handleCloseFile} handleOpenFile = {this.handleOpenFile} handleSelected = {this.handleSelected} openFiles = {this.state.openFiles} selectedFile = {this.state.selectedFile}/>
+            <div className='bars'>
+                <Sidebar handleOpenFile = {this.handleOpenFile} handleSelected = {this.handleSelected} selectedFile = {this.state.selectedFile} openFiles = {this.state.openFiles}/>
+                <div className='content'>
+                    <Filebar handleCloseFile = {this.handleCloseFile} handleOpenFile = {this.handleOpenFile} handleSelected = {this.handleSelected} openFiles = {this.state.openFiles} selectedFile = {this.state.selectedFile}/>
+                    <Home />
+                </div>
             </div>
             </>
         );
