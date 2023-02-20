@@ -26,6 +26,7 @@ class Home extends React.Component {
                     <div className="welcome">
                         <span>WELCOME!</span>
                         <p>My name is Nancy</p>
+                        <p>I'm an aspiring UX Engineer based in San Jose, CA.</p>
                     </div>
                 </div>
             </div>

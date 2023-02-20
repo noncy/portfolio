@@ -24,7 +24,7 @@
 .welcome span{
     display:inline-block;
     position: relative;
-    font-size: 40px;
+    font-size: 60px;
     color: white;
     padding: 3px;
     animation: glitch 1s linear infinite;
