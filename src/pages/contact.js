@@ -39,6 +39,7 @@ class Contact extends React.Component{
                         <hr/>
                         <ul className="contacts">
                             <Cont ico = "mail" contactinfo = "Email"/>
+                            <Cont ico = "linkedin" contactinfo = "Linkedin" />
                             <Cont ico = "git" contactinfo = "Github"/>
                             <Cont ico ="resume" contactinfo="Resume"/>
                         </ul>

@@ -14,8 +14,8 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            openFiles: [],
-            selectedFile: ""
+            openFiles: ["home.js"],
+            selectedFile: "home.js"
         }
     }
 
