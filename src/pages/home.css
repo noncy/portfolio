@@ -27,37 +27,20 @@
     font-size: 40px;
     color: white;
     padding: 3px;
-    animation: animate 2s;
-    animation-fill-mode: forwards;
+    animation: glitch 1s linear infinite;
 }
 
-@keyframes animate {
-    0% {
-        color: #000;
-        left: -10px;
-        text-shadow: none;
-      }
-      25% {
-        color: #333;
-        left: 10px;
-        text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff;
-      }
-      50% {
-        color: #666;
-        left: -10px;
-        text-shadow: none;
-      }
-      75% {
-        color: #999;
-        left: 10px;
-        text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff;
-      }
-      100% {
-        color: #ccc;
-        left: -10px;
-        text-shadow: none;
-      }
-}
+@keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
 
 .welcome p{
     font-size: 20px;

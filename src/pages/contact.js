@@ -1,7 +1,21 @@
 import React from 'react';
+import './contact.css';
+import nancy from '../Nancy_Le_.png'
+
+class Cont extends React.Component {
+    render() {
+        return(
+            <li className="links">
+                <span className={`icon ${this.props.ico}`}></span>
+                <p>{this.props.contactinfo}</p>
+            </li>
+        );
+    }
+}
 
 class Contact extends React.Component{
     render() {
+        const {contactinfo, ico} = this.props;
         return(
             <div className="contactpage">
                 <div className="filepath">
@@ -15,6 +29,19 @@ class Contact extends React.Component{
                         <span className="pink">from </span>
                         <span className="orange">'nancy'</span>
                         <span>;</span>
+                    </div>
+                </div>
+                <div className="contact">
+                    <div className="contactcard">
+                        <div className="contactphoto">
+                            <img src={nancy}/>
+                        </div>
+                        <hr/>
+                        <ul className="contacts">
+                            <Cont ico = "mail" contactinfo = "Email"/>
+                            <Cont ico = "git" contactinfo = "Github"/>
+                            <Cont ico ="resume" contactinfo="Resume"/>
+                        </ul>
                     </div>
                 </div>
             </div>
