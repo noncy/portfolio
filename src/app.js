@@ -4,6 +4,10 @@ import Nav from './components/nav';
 import Sidebar from './components/sidebar';
 import Filebar from './components/filebar';
 import Home from './pages/home';
+import Projects from './pages/projects';
+import About from './pages/aboutme';
+import Contact from './pages/contact';
+
 
 
 class App extends React.Component {
@@ -41,7 +45,11 @@ class App extends React.Component {
                 <Sidebar handleOpenFile = {this.handleOpenFile} handleSelected = {this.handleSelected} selectedFile = {this.state.selectedFile} openFiles = {this.state.openFiles}/>
                 <div className='content'>
                     <Filebar handleCloseFile = {this.handleCloseFile} handleOpenFile = {this.handleOpenFile} handleSelected = {this.handleSelected} openFiles = {this.state.openFiles} selectedFile = {this.state.selectedFile}/>
-                    <Home />
+                    {this.state.selectedFile === 'home.js' ? <Home /> : <div/>}
+                    {this.state.selectedFile === 'aboutme.js' ? <About /> : <div/>}
+                    {this.state.selectedFile === 'projects.js' ? <Projects /> : <div/>}
+                    {this.state.selectedFile === 'contact.js' ? <Contact /> : <div/>}
+
                 </div>
             </div>
             </>

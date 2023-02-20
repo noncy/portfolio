@@ -9,26 +9,25 @@ class Home extends React.Component {
     }
 
     render() {
-        var content = 
-        `import Home from 'portfolio';
-
-        const welcomeMsg = "Welcome!"
-        const name = "My name is Nancy"
-        const uxe = "I'm an aspiring front-end developer based in San Jose, CA."
-        `
         return(
             <div className="homepage">
                 <div className="filepath">
                 noncy > Component > home.js
                 </div>
-                <Editor 
-                className ="editor"
-                height ="100vh"
-                width = "99%"
-                defaultLanguage="javascript"
-                minimap="false"
-                theme="vs-dark"
-                value={content} />
+                <div className="homecontent">
+                    <div className="import">
+                        <span className="gray"> 1 </span>
+                        <span className="pink">import </span>
+                        <span className="blue">Home </span>
+                        <span className="pink">from </span>
+                        <span className="orange">'portfolio'</span>
+                        <span>;</span>
+                    </div>
+                    <div className="welcome">
+                        <span>WELCOME!</span>
+                        <p>My name is Nancy</p>
+                    </div>
+                </div>
             </div>
         );
     }
