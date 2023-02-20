@@ -49,7 +49,6 @@ class App extends React.Component {
                     {this.state.selectedFile === 'aboutme.js' ? <About /> : <div/>}
                     {this.state.selectedFile === 'projects.js' ? <Projects /> : <div/>}
                     {this.state.selectedFile === 'contact.js' ? <Contact /> : <div/>}
-
                 </div>
             </div>
             </>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './about.css';
 
 class About extends React.Component{
     render() {
@@ -15,6 +16,33 @@ class About extends React.Component{
                         <span className="pink">from </span>
                         <span className="orange">'nancy'</span>
                         <span>;</span>
+                    </div>
+                    <div className="aboutme">
+                        <div className="title-header">
+                            <span>A</span>
+                            <span>B</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>T</span>
+
+                        </div>
+                        <div className="cards">
+                            <div className="left">
+                                <div className="cardtitle">
+                                    <h2>SKILLS</h2>
+                                </div>
+                            </div>
+                            <div className="middle">
+                                <div className="cardtitle">
+                                   <h2>HISTORY</h2> 
+                                </div>
+                            </div>
+                            <div className="right">
+                                <div className="cardtitle">
+                                    <h2>PERSONAL</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
