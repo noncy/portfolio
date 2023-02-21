@@ -25,7 +25,7 @@ class File extends React.Component {
 class Folder extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {isOpen: false};
+        this.state = {isOpen: this.props.isOpen ?? false};
     };
 
     handleToggle = () => {
@@ -56,7 +56,7 @@ class Sidebar extends React.Component {
             <div className='sidebar'>
                 <h3>EXPLORER</h3>     
                 <div className="current">
-                    <Folder foldername = {'OPEN PAGES'}>
+                    <Folder isOpen = {true} foldername = {'OPEN PAGES'}>
                         {this.props.openFiles.map((file) => {
                             return (
                                 <File handleCloseFile = {this.props.handleCloseFile} handleSelected = {this.props.handleSelected} selectedFile = {this.props.selectedFile} filename = {file} />
