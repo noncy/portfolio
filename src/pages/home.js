@@ -1,7 +1,32 @@
 import React from 'react';
 import './home.css'
+import leftarrow from '../leftarrow.svg'
 
 import Editor from "@monaco-editor/react";
+
+class Modal extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {modalClose: false};
+    }
+
+    handleModal = () => {
+        this.setState({modalClose: !this.state.modalclose})
+        console.log(this)
+    }
+
+    render() {
+        return(
+            <div className={`modalcomp ${this.state.modalClose ? "hide" : ""}`}>
+                <div className="modalcontent">
+                    <img src={leftarrow} className="arrow"></img>
+                    <p className="info">Click here to view all the available files</p>
+                    <button className="helpclosebtn material-symbols-outlined" onClick={this.handleModal}>close</button>
+                </div>
+            </div>
+        );
+    }
+}
 
 class Home extends React.Component {
     constructor(props) {
@@ -28,6 +53,7 @@ class Home extends React.Component {
                         <p>My name is Nancy</p>
                         <p>I'm an aspiring UX Engineer based in San Jose, CA.</p>
                     </div>
+                    <Modal handleModal = {this.props.handleModal}/>
                 </div>
             </div>
         );

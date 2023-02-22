@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2afd5375.css",
-    "main.js": "/portfolio/static/js/main.4ebd5606.js",
+    "main.css": "/portfolio/static/css/main.a4bd9d1c.css",
+    "main.js": "/portfolio/static/js/main.bce64f2e.js",
     "static/media/Nancy_Le_.png": "/portfolio/static/media/Nancy_Le_.808ebfb8cef3b54cf346.png",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.d4e7cc9cbe809a58dee1.svg",
     "static/media/git.svg": "/portfolio/static/media/git.9bef378abb6bde85c8b5.svg",
@@ -10,11 +10,11 @@
     "static/media/mail.svg": "/portfolio/static/media/mail.2b8c3e45f9ba89902e1e.svg",
     "static/media/down.svg": "/portfolio/static/media/down.2424c398230e35a71c37.svg",
     "static/media/right.svg": "/portfolio/static/media/right.c684fbabea4ca375e0f1.svg",
-    "main.2afd5375.css.map": "/portfolio/static/css/main.2afd5375.css.map",
-    "main.4ebd5606.js.map": "/portfolio/static/js/main.4ebd5606.js.map"
+    "main.a4bd9d1c.css.map": "/portfolio/static/css/main.a4bd9d1c.css.map",
+    "main.bce64f2e.js.map": "/portfolio/static/js/main.bce64f2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2afd5375.css",
-    "static/js/main.4ebd5606.js"
+    "static/css/main.a4bd9d1c.css",
+    "static/js/main.bce64f2e.js"
   ]
 }

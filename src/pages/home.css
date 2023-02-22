@@ -42,3 +42,45 @@
     left:-10px;
 }
 
+.modalcomp {
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  height: 30px;
+  background-color: black;
+  top: 120px;
+  left: 150px;
+  color: white;
+}
+
+.helpclosebtn{
+  position: relative;
+  float:right;
+  top: 3px;
+  background-color: transparent;
+  color: white;
+  border:none;
+}
+
+.helpclosebtn:hover{
+  color: gray;
+}
+
+.arrow {
+  position: absolute;
+  top:-15px;
+  width: 60px;
+}
+
+.info {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Ink Free";
+}
+
+.hide{
+  display:none;
+}
+
+
