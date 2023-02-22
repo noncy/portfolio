@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.22c423c9.css",
-    "main.js": "/static/js/main.79f5efc5.js",
+    "main.css": "/static/css/main.bd99d635.css",
+    "main.js": "/static/js/main.b1c394af.js",
     "static/media/Nancy_Le_.png": "/static/media/Nancy_Le_.c7f03bbfe7bf964b4af9.png",
     "static/media/noncy.png": "/static/media/noncy.69221f41dc0320a75b1b.png",
     "static/media/stadia.svg": "/static/media/stadia.fc004a4440f1f54f076338a016c9ac6c.svg",
+    "static/media/figma.svg": "/static/media/figma.ba3a10e14c2b400c5981eb1cab9b1ffc.svg",
+    "static/media/react.svg": "/static/media/react.f82b8fd2556ef7aa4c8c13819581a32d.svg",
     "static/media/leftarrow.svg": "/static/media/leftarrow.91441803a2543ce140c95e5df86bd733.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.d4e7cc9cbe809a58dee1.svg",
+    "static/media/py.svg": "/static/media/py.1fd01593d96d133e32ff82c70a007022.svg",
+    "static/media/js.svg": "/static/media/js.2260c0bee691b14cdede3c79f62d7471.svg",
+    "static/media/gitb.svg": "/static/media/gitb.2edfc7eedbb491f081380f81cd1ebea0.svg",
     "static/media/git.svg": "/static/media/git.9bef378abb6bde85c8b5.svg",
+    "static/media/ts.svg": "/static/media/ts.4a53b3fbe25d3169400cb7f7807a340b.svg",
     "index.html": "/index.html",
+    "static/media/angular.svg": "/static/media/angular.720464cf79170d6a187632923241aed3.svg",
+    "static/media/css.svg": "/static/media/css.4aba9f70cf98b4fc1d50fdf404f9605c.svg",
+    "static/media/html.svg": "/static/media/html.e18c8e1f533ab27f8bb05f0af89a282d.svg",
     "static/media/resume.svg": "/static/media/resume.adc5405048c9f1e16372.svg",
     "static/media/mail.svg": "/static/media/mail.2b8c3e45f9ba89902e1e.svg",
     "static/media/down.svg": "/static/media/down.2424c398230e35a71c37.svg",
     "static/media/right.svg": "/static/media/right.c684fbabea4ca375e0f165567633bb8a.svg",
-    "main.22c423c9.css.map": "/static/css/main.22c423c9.css.map",
-    "main.79f5efc5.js.map": "/static/js/main.79f5efc5.js.map"
+    "main.bd99d635.css.map": "/static/css/main.bd99d635.css.map",
+    "main.b1c394af.js.map": "/static/js/main.b1c394af.js.map"
   },
   "entrypoints": [
-    "static/css/main.22c423c9.css",
-    "static/js/main.79f5efc5.js"
+    "static/css/main.bd99d635.css",
+    "static/js/main.b1c394af.js"
   ]
 }
