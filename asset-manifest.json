@@ -1,7 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd99d635.css",
-    "main.js": "/static/js/main.b1c394af.js",
+    "main.css": "/static/css/main.4e54936b.css",
+    "main.js": "/static/js/main.e1d2fa9a.js",
+    "static/media/pbcookies.jpeg": "/static/media/pbcookies.ab8d0ff24bd91b809060.jpeg",
+    "static/media/kb.jpeg": "/static/media/kb.a7d210da81120fbd811a.jpeg",
+    "static/media/lyla.jpeg": "/static/media/lyla.6d2f1002e5b701b1a534.jpeg",
+    "static/media/boba.jpeg": "/static/media/boba.1016426f2f8d7d76bd28.jpeg",
+    "static/media/lylu.jpeg": "/static/media/lylu.69ce29fb7a373fa6a172.jpeg",
+    "static/media/boba2.jpeg": "/static/media/boba2.d59182d52875a3bf1bc4.jpeg",
+    "static/media/lulu.jpg": "/static/media/lulu.adda4e1eb8042893d45a.jpg",
     "static/media/Nancy_Le_.png": "/static/media/Nancy_Le_.c7f03bbfe7bf964b4af9.png",
     "static/media/noncy.png": "/static/media/noncy.69221f41dc0320a75b1b.png",
     "static/media/stadia.svg": "/static/media/stadia.fc004a4440f1f54f076338a016c9ac6c.svg",
@@ -22,11 +29,11 @@
     "static/media/mail.svg": "/static/media/mail.2b8c3e45f9ba89902e1e.svg",
     "static/media/down.svg": "/static/media/down.2424c398230e35a71c37.svg",
     "static/media/right.svg": "/static/media/right.c684fbabea4ca375e0f165567633bb8a.svg",
-    "main.bd99d635.css.map": "/static/css/main.bd99d635.css.map",
-    "main.b1c394af.js.map": "/static/js/main.b1c394af.js.map"
+    "main.4e54936b.css.map": "/static/css/main.4e54936b.css.map",
+    "main.e1d2fa9a.js.map": "/static/js/main.e1d2fa9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd99d635.css",
-    "static/js/main.b1c394af.js"
+    "static/css/main.4e54936b.css",
+    "static/js/main.e1d2fa9a.js"
   ]
 }
