@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a53a7d5.css",
-    "main.js": "/static/js/main.0694bae8.js",
+    "main.css": "/static/css/main.22c423c9.css",
+    "main.js": "/static/js/main.79f5efc5.js",
     "static/media/Nancy_Le_.png": "/static/media/Nancy_Le_.c7f03bbfe7bf964b4af9.png",
+    "static/media/noncy.png": "/static/media/noncy.69221f41dc0320a75b1b.png",
     "static/media/stadia.svg": "/static/media/stadia.fc004a4440f1f54f076338a016c9ac6c.svg",
     "static/media/leftarrow.svg": "/static/media/leftarrow.91441803a2543ce140c95e5df86bd733.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.d4e7cc9cbe809a58dee1.svg",
@@ -12,11 +13,11 @@
     "static/media/mail.svg": "/static/media/mail.2b8c3e45f9ba89902e1e.svg",
     "static/media/down.svg": "/static/media/down.2424c398230e35a71c37.svg",
     "static/media/right.svg": "/static/media/right.c684fbabea4ca375e0f165567633bb8a.svg",
-    "main.3a53a7d5.css.map": "/static/css/main.3a53a7d5.css.map",
-    "main.0694bae8.js.map": "/static/js/main.0694bae8.js.map"
+    "main.22c423c9.css.map": "/static/css/main.22c423c9.css.map",
+    "main.79f5efc5.js.map": "/static/js/main.79f5efc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a53a7d5.css",
-    "static/js/main.0694bae8.js"
+    "static/css/main.22c423c9.css",
+    "static/js/main.79f5efc5.js"
   ]
 }
