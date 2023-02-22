@@ -1,20 +1,56 @@
 import React from 'react';
-import './contact.css';
-import nancy from '../svg/Nancy_Le_.png'
+import noncy from '../svg/noncy.png'
 import right from '../svg/right.svg'
+import './contact.css';
+
+class Card extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className="contactcard" onAnimationEnd={this.props.afterHover}>
+                <div className="contactphoto">
+                    <img src={noncy} alt="noncy"/>
+                </div>
+                <hr/>
+                <ul className="contacts">
+                    <Cont ico = "mail" contactinfo = "Email" linkpath = "mailto:nancy@noncy.dev"/>
+                    <Cont ico = "linkedin" contactinfo = "Linkedin" linkpath= "https://www.linkedin.com/in/lenancy/"/>
+                    <Cont ico = "git" contactinfo = "Github" linkpath= "https://github.com/noncy"/>
+                    <Cont ico ="resume" contactinfo="Resume"/>
+                </ul>
+            </div> 
+        );  
+    }
+}
 
 class Cont extends React.Component {
     render() {
         return(
             <li className="links">
                 <span className={`icon ${this.props.ico}`}></span>
-                <p>{this.props.contactinfo}</p>
+                <a href={this.props.linkpath} target="_blank">{this.props.contactinfo}</a>
             </li>
         );
     }
 }
 
 class Contact extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {isReceived: false}
+    }
+
+    afterHover = () => {
+        this.setState({isReceived: !this.state.isReceived});
+        setTimeout(()=> {
+            this.setState({isReceived: !this.state.isReceived})
+        }, 2000);
+        console.log(this);
+    }
+
     render() {
         const {contactinfo, ico} = this.props;
         return(
@@ -37,17 +73,10 @@ class Contact extends React.Component{
                     </div>
                 </div>
                 <div className="contact">
-                    <div className="contactcard">
-                        <div className="contactphoto">
-                            {/* <img src={nancy}/> */}
-                        </div>
-                        <hr/>
-                        <ul className="contacts">
-                            <Cont ico = "mail" contactinfo = "Email"/>
-                            <Cont ico = "linkedin" contactinfo = "Linkedin" />
-                            <Cont ico = "git" contactinfo = "Github"/>
-                            <Cont ico ="resume" contactinfo="Resume"/>
-                        </ul>
+                    <h2>Take a card</h2>
+                    <Card afterHover = {this.afterHover}/>
+                    <div className={`receive ${this.state.isReceived ? "show" : ""}`}>
+                        Card received!
                     </div>
                 </div>
             </div>
