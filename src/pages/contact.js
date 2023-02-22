@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import nancy from '../Nancy_Le_.png'
+import nancy from '../svg/Nancy_Le_.png'
 
 class Cont extends React.Component {
     render() {

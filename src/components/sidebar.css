@@ -43,11 +43,11 @@ li{
 }
 
 .openfolder {
-    list-style-image: url('./down.svg');
+    list-style-image: url('../svg/down.svg');
 }
 
 .closedfolder {
-    list-style-image: url('./right.svg');
+    list-style-image: url('../svg/right.svg');
 }
 
 .hidden { 

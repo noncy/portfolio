@@ -52,19 +52,19 @@
 }
 
 .mail {
-    content: url('../mail.svg');
+    content: url('../svg/mail.svg');
 }
 
 .git{
-    content: url('../git.svg');
+    content: url('../svg/git.svg');
 }
 
 .resume {
-    content: url('../resume.svg')
+    content: url('../svg/resume.svg')
 }
 
 .linkedin {
-    content: url('../linkedin.svg')
+    content: url('../svg/linkedin.svg')
 }
 
 .contacts p {

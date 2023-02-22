@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css'
-import leftarrow from '../leftarrow.svg'
+import leftarrow from '../svg/leftarrow.svg'
+import right from '../svg/right.svg'
 
 import Editor from "@monaco-editor/react";
 
@@ -37,7 +38,11 @@ class Home extends React.Component {
         return(
             <div className="homepage">
                 <div className="filepath">
-                noncy > Component > home.js
+                noncy 
+                <img src={right} alt="right arrow"/> 
+                Component 
+                <img src={right} alt="right arrow"/> 
+                home.js
                 </div>
                 <div className="homecontent">
                     <div className="import">
