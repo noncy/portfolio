@@ -149,6 +149,10 @@ section {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.leftcontent.backcontent img {
+    padding: 5px;
+}
+
 .middlecontent {
     flex-direction: column;
 }

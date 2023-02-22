@@ -1,6 +1,18 @@
 import React from 'react';
 import './about.css';
 import right from '../svg/right.svg'
+import js from '../svg/js.svg'
+import ts from '../svg/ts.svg'
+import py from '../svg/py.svg'
+import html from '../svg/html.svg'
+import css from '../svg/css.svg'
+import react from '../svg/react.svg'
+import ang from '../svg/angular.svg'
+import figma from '../svg/figma.svg'
+import gitb from '../svg/gitb.svg'
+
+
+
 
 class Card extends React.Component {
     constructor(props) {
@@ -71,15 +83,18 @@ class About extends React.Component{
                             handleFlipped = {this.props.handleFlipped}>
                             <div className="leftcontent backcontent">
                                 <section className="backleft">
-                                    <p>js</p>
-                                    <p>ts</p>
-                                    <p>py</p>
+                                    <img src={js} alt="js"/>
+                                    <img src={ts} alt="ts"/>
+                                    <img src={html} alt="html"/>
+                                    <img src={css} alt="css"/>
+                                    <img src={py} alt="py"/>
                                 </section>
                                 <hr/>
                                 <section className="backright">
-                                    <p>react</p>
-                                    <p>boq wiz</p>
-                                    <p>angular</p>
+                                    <img src={react} alt="react"/>
+                                    <img src={ang} alt="angular"/>
+                                    <img src={gitb} alt="git bash"/>
+                                    <img src={figma} alt="figma"/>
                                 </section>
                             </div>
                             </Card>
