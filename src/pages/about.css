@@ -198,12 +198,26 @@ section {
 
 .rightcontent{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .righttext {
-    width: 80%;
+    width: 90%;
+}
+
+.hobby h4{
+    padding: 20px;
+}
+
+.hobby li{
+    display: inline-block;
+    padding: 5px 1px 0 1px;
+}
+
+.hobby img {
+    border-radius: 20px;
+    height: 370px;
 }
 
 

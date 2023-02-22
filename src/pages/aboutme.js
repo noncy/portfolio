@@ -1,15 +1,24 @@
 import React from 'react';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
 import './about.css';
-import right from '../svg/right.svg'
-import js from '../svg/js.svg'
-import ts from '../svg/ts.svg'
-import py from '../svg/py.svg'
-import html from '../svg/html.svg'
-import css from '../svg/css.svg'
-import react from '../svg/react.svg'
-import ang from '../svg/angular.svg'
-import figma from '../svg/figma.svg'
-import gitb from '../svg/gitb.svg'
+import right from '../svg/right.svg';
+import js from '../svg/js.svg';
+import ts from '../svg/ts.svg';
+import py from '../svg/py.svg';
+import html from '../svg/html.svg';
+import css from '../svg/css.svg';
+import react from '../svg/react.svg';
+import ang from '../svg/angular.svg';
+import figma from '../svg/figma.svg';
+import gitb from '../svg/gitb.svg';
+import boba1 from '../svg/boba.jpeg';
+import boba2 from '../svg/boba2.jpeg';
+import kb from '../svg/kb.jpeg';
+import lulu from '../svg/lulu.jpg';
+import lyla from '../svg/lyla.jpeg';
+import lylu from '../svg/lylu.jpeg';
+import cookies from '../svg/pbcookies.jpeg';
 
 
 
@@ -47,6 +56,8 @@ class About extends React.Component{
         super(props);
         
     }
+
+    
     render() {
         return(
             <div className="aboutpage">
@@ -136,7 +147,30 @@ class About extends React.Component{
                             handleFlipped = {this.props.handleFlipped}>
                             <div className="rightcontent backcontent">
                                 <div className="righttext">
-                                    Dolore ad quis consectetur in ea aliquip cillum eiusmod nulla ullamco non anim fugiat irure. Minim ex duis minim veniam nisi ea. Ut quis qui sunt voluptate qui. Commodo tempor ea ad id aliquip consectetur labore aliquip. Labore occaecat minim culpa Lorem deserunt nostrud non non quis reprehenderit magna proident laborum excepteur. Aliquip ea voluptate et ullamco incididunt laboris aliquip sint aliquip consectetur. Magna minim ad duis ipsum pariatur amet consectetur deserunt est minim aliquip labore.
+                                    <div className="hobby">
+                                        <h4>INTERESTS</h4>
+                                        <ul>
+                                            Some of my interests and hobbies include: <br/>
+                                            <li>Video games - </li>
+                                            <li>Boba - </li>
+                                            <li>Cats - </li>
+                                            <li>Keyboards - </li> 
+                                            <li>Baking</li>
+                                        </ul>
+                                        <Slider
+                                        autoplay="2000"
+                                        previousButton=""
+                                        nextButton=""
+                                        >
+                                        <img src={cookies}/>
+                                        <img src={boba1}/>
+                                        <img src={boba2}/>
+                                        <img src={lyla}/>
+                                        <img src={lulu}/>
+                                        <img src={lylu}/>
+                                        <img src={kb}/>
+                                        </Slider>
+                                    </div>
                                 </div>
                             </div>
                             </Card>
