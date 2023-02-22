@@ -1,7 +1,7 @@
 {
   "name": "noncy",
   "version": "0.1.0",
-  "homepage": "www.noncy.dev",
+  "homepage": "https://noncy.github.io/",
   "private": true,
   "dependencies": {
     "@monaco-editor/react": "^4.4.6",
