@@ -4,17 +4,17 @@ import leftarrow from '../svg/leftarrow.svg'
 import right from '../svg/right.svg'
 import nancy from '../svg/Nancy_Le_.png'
 
-import Editor from "@monaco-editor/react";
-
 class Modal extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {modalClose: false};
+        this.state = {
+            modalClose: sessionStorage.getItem("modalclose") ?? false
+        };
     }
 
     handleModal = () => {
         this.setState({modalClose: !this.state.modalclose})
-        console.log(this)
+        sessionStorage.setItem("modalclose", true)
     }
 
     render() {
