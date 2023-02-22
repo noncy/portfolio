@@ -4,42 +4,39 @@
     font-size: 12px;
 }
 
-.welcome{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: -70px;
+.welcome {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.welcome span{
+.circle {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 2px solid #EEAAD3;
+  overflow: hidden;
+  margin-right: 50px;
+  box-shadow: 0 0 10px 10px rgba(197, 134, 192, 0.3);
+}
+
+.welcomemsg span{
     display:inline-block;
     position: relative;
     font-size: 60px;
     color: white;
-    padding: 3px;
-    animation: glitch 1s linear infinite;
+    right: 10px;
 }
 
-@keyframes glitch{
-    2%,64%{
-      transform: translate(2px,0) skew(0deg);
-    }
-    4%,60%{
-      transform: translate(-2px,0) skew(0deg);
-    }
-    62%{
-      transform: translate(0,0) skew(5deg); 
-    }
-  }
 
-.welcome p{
+.welcomemsg p{
     font-size: 20px;
     color: white;
-    position: relative;
-    left:-10px;
 }
 
 .modalcomp {
@@ -83,4 +80,58 @@
   display:none;
 }
 
+.rollingtxt {
+  display: block;
+  height: 25px;
+  position: relative;
+  width: 260px;
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+}
+
+.rollingtxt span{
+  font-size: 20px;
+  top: 2px;
+  width: 400px;
+  left: 55px;
+  display: block;
+  text-align: left;
+  transform: translateY(-0px);
+  animation: rollin-txt 8s infinite;
+  color: #EEAAD3;
+}
+
+@keyframes rollin-txt {
+  0% {
+    transform: translateY(-25px);
+  }
+  10% {
+    transform: translateY(-25px);
+  }
+  20% {
+    transform: translateY(-48px);
+  }
+  30% {
+    transform: translateY(-48px);
+  }
+  50% {
+    transform: translateY(-71px);
+  }
+  60% {
+    transform: translateY(-71px);
+  }
+  70% {
+    transform: translateY(-94px);
+  }
+  80% {
+    transform: translateY(-94px);
+  }
+  90% {
+    transform: translateY(-117px);
+  }
+  100% {
+    transform: translateY(-117px);
+  }
+}
 

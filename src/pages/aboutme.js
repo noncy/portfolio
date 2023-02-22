@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.css';
+import right from '../svg/right.svg'
 
 class Card extends React.Component {
     constructor(props) {
@@ -38,7 +39,11 @@ class About extends React.Component{
         return(
             <div className="aboutpage">
                 <div className="filepath">
-                noncy > Component > contact.js
+                noncy 
+                <img src={right} alt="right arrow"/>
+                component 
+                <img src={right} alt="right arrow"/> 
+                aboutme.js
                 </div>
                 <div className="aboutcontent">
                     <div className="import">

@@ -1,6 +1,7 @@
 import React from 'react';
 import './contact.css';
 import nancy from '../svg/Nancy_Le_.png'
+import right from '../svg/right.svg'
 
 class Cont extends React.Component {
     render() {
@@ -19,7 +20,11 @@ class Contact extends React.Component{
         return(
             <div className="contactpage">
                 <div className="filepath">
-                noncy > Component > contact.js
+                noncy 
+                <img src={right} alt="right arrow"/> 
+                component 
+                <img src={right} alt="right arrow"/> 
+                contact.js
                 </div>
                 <div className="contactcontent">
                     <div className="import">
@@ -34,7 +39,7 @@ class Contact extends React.Component{
                 <div className="contact">
                     <div className="contactcard">
                         <div className="contactphoto">
-                            <img src={nancy}/>
+                            {/* <img src={nancy}/> */}
                         </div>
                         <hr/>
                         <ul className="contacts">

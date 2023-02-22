@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css'
 import leftarrow from '../svg/leftarrow.svg'
 import right from '../svg/right.svg'
+import nancy from '../svg/Nancy_Le_.png'
 
 import Editor from "@monaco-editor/react";
 
@@ -38,9 +39,9 @@ class Home extends React.Component {
         return(
             <div className="homepage">
                 <div className="filepath">
-                noncy 
+                noncy
                 <img src={right} alt="right arrow"/> 
-                Component 
+                component 
                 <img src={right} alt="right arrow"/> 
                 home.js
                 </div>
@@ -54,9 +55,21 @@ class Home extends React.Component {
                         <span>;</span>
                     </div>
                     <div className="welcome">
-                        <span>WELCOME!</span>
-                        <p>My name is Nancy</p>
-                        <p>I'm an aspiring UX Engineer based in San Jose, CA.</p>
+                        <div className="circle">
+                            <img src={nancy} alt="nancy"/>
+                        </div>
+                        <div className="welcomemsg">
+                            <span>WELCOME!</span>
+                            <p>My name is Nancy</p>
+                            <div className="rollingtxt">
+                                I am a
+                                <span>Frontend Engineer</span>
+                                <span>Boba lover</span>
+                                <span>Keyboard enthusiast</span>
+                                <span>Cat mom</span>
+                                <span>Gamer</span>
+                            </div>
+                        </div>
                     </div>
                     <Modal handleModal = {this.props.handleModal}/>
                 </div>
