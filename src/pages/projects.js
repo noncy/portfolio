@@ -1,21 +1,36 @@
 import React from 'react';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
 import right from '../svg/right.svg'
 import stadia from '../svg/stadia.svg'
 import './projects.css';
+import settingsbefore from '../svg/settingsbefore.png';
+import settingsafter from '../svg/settingsafter.png';
+import skychat from '../svg/skychat.png';
+import sky from '../svg/skychat.svg'
 
-class Projectrow extends React.Component {
+class Projectdesc extends React.Component {
+    render() {
+        return (
+            <div className="aboutproj">
+                <div className="projtitle">
+                    <img src={this.props.title}/> 
+                </div>
+            {this.props.children}
+        </div>
+        );
+    }
+}
+
+class Projectimg extends React.Component {
     render() {
         return(
-            <div className="project">
-                <div className="display">PLACEHOLDER</div>
-                <hr/>
-                <div className="aboutproj">
-                    <div className="projtitle">
-                       <img src={this.props.title}/> 
-                    </div>
-                    Tempor nisi pariatur culpa sit labore ullamco non. Nisi minim irure quis ex ea. Ex irure anim elit magna esse nulla duis in ex. Esse qui nisi officia in non ad amet laborum ut commodo nulla velit pariatur proident. Tempor deserunt ad adipisicing sint aliquip ut tempor esse ea velit culpa voluptate. Anim adipisicing tempor enim proident. Aliqua cillum sint sint laborum ut eiusmod mollit commodo eu ad ut nisi.
-                </div>
+        <>
+            <div className="display">
+                {this.props.children}
             </div>
+            <hr/>
+        </>
         )
     }
 }
@@ -42,9 +57,31 @@ class Projects extends React.Component{
                     </div>
                 </div>
                 <div className="projectcontent">
-                    <Projectrow title={stadia}/>
-                    <Projectrow title={"Title"}/>  
-                    <Projectrow title={"Title"}/>  
+                    <div className="project">
+                        <Projectimg>
+                            <figure>
+                               <img src={settingsbefore} alt="Settings menu before"/>
+                               <figcaption>BEFORE</figcaption>
+                            </figure>
+                            <figure>
+                                <img src={settingsafter} alt="Settings menu after"/>
+                                <figcaption>AFTER</figcaption>
+                            </figure>
+                            
+                        </Projectimg>
+                        <Projectdesc title={stadia}>
+                            <p>Stadia was a cloud gaming service developed and operated by Google. 
+                            This project focuses on the mobile web settings menu, providing users a fullscreen menu modal. This was a redesign to improve accessibility and functionality.</p>
+                        </Projectdesc>
+                    </div>
+                    <div className="project">
+                        <Projectimg title={sky}>
+                            <img src={skychat} alt="skychat"/>
+                        </Projectimg>
+                        <Projectdesc>
+                            <p>This is an extension made to allow additional features to a chatting tool used at Google. Popout chat button, to allow for easier chatting while browsing related articles to the issue. Window resize feature, to enhance logs shared by users to fit and greater readability</p>
+                        </Projectdesc>
+                    </div>
                 </div>
             </div>
         );

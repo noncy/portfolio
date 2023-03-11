@@ -19,14 +19,26 @@ import lulu from '../svg/lulu.jpg';
 import lyla from '../svg/lyla.jpeg';
 import lylu from '../svg/lylu.jpeg';
 import cookies from '../svg/pbcookies.jpeg';
+import sass from '../svg/SaSS.svg';
+import laptop from '../svg/laptop.svg';
 
 
 
+class Egg extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+             <input></input>
+        );
+    }
+}
 
 class Card extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {isFlipped: false};
+        this.state = {isFlipped: this.props.isFlipped ?? false};
     }
     
     handleFlipped = () => {
@@ -98,6 +110,7 @@ class About extends React.Component{
                                     <img src={ts} alt="ts"/>
                                     <img src={html} alt="html"/>
                                     <img src={css} alt="css"/>
+                                    <img src={sass} alt="SaSS"/>
                                     <img src={py} alt="py"/>
                                 </section>
                                 <hr/>
@@ -118,24 +131,28 @@ class About extends React.Component{
                                 <section className="topmiddle">
                                     <h4>Stadia</h4>
                                     <div className="job">
-                                        <p>Mountain View,CA</p>
                                         <p>UX Engineer (Rotation)</p>
-                                        <p>Jul 21 - Oct 21</p>
                                     </div>
                                     <div className="jobdesc">
-                                        Qui labore excepteur elit eu et laboris velit sit. Elit qui duis eu ad irure proident officia laborum commodo. Et dolore enim consectetur consectetur tempor occaecat nisi fugiat ipsum cillum. Esse cupidatat incididunt consectetur laboris labore sint minim ut anim velit magna qui id.
+                                        Stadia offered a cloud gaming service available over PC, Mobile, and TV. 
+                                    </div>
+                                    <div className="jobskills">
+                                        <img src={laptop} alt="skills"/>
+                                        <p>Boq Wiz | SaSS | A11y | </p>
                                     </div>
                                 </section>
                                 <hr/>
                                 <section className="bottommiddle">
                                     <h4>Google</h4>
                                     <div className="job">
-                                        <p>Mountain View,CA</p>
                                         <p>Corporate Operations Engineer</p>
-                                        <p>Feb 20 - Mar 23</p>
                                     </div>
                                     <div className="jobdesc">
-                                        Est anim reprehenderit labore velit. Irure velit culpa laborum magna ad irure occaecat Lorem Lorem nisi qui. Lorem exercitation duis esse elit veniam voluptate in consequat anim. Non dolore aute excepteur do tempor commodo in. Reprehenderit nisi amet irure est.
+                                        Support Googlers worldwide to achieve ultimate productivity
+                                    </div>
+                                    <div className="jobskills">
+                                        <img src={laptop} alt="skills"/>
+                                        <p>MacOS | Windows | Linux | Android | IOS</p>
                                     </div>
                                 </section>
                             </div>
@@ -170,6 +187,7 @@ class About extends React.Component{
                                         <img src={lylu}/>
                                         <img src={kb}/>
                                         </Slider>
+                                        <Egg></Egg>                              
                                     </div>
                                 </div>
                             </div>

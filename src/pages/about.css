@@ -194,6 +194,23 @@ section {
     display: flex;
     width: 80%;
     padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.jobskills {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.jobskills img {
+    padding-right: 10px;
+}
+
+.jobskills p{
+    padding: 5px 0 0 5px;
 }
 
 .rightcontent{
@@ -220,5 +237,34 @@ section {
     height: 370px;
 }
 
+input {
+    background-color: transparent;
+    border: none;
+}
 
+input:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.05);
+    cursor: help;
+}
+
+/* @media(max-width: 500px) {
+    .aboutme {
+        max-width: 500px;
+    }
+
+    .title-header {
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .left, .middle, .right, .left .back, .middle .back, .right .back {
+        width: 200px;
+        height: 250px;
+    }
+} */
 

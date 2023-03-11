@@ -7,14 +7,27 @@
     display: flex;
     padding: 40px;
     align-items: center;
+    justify-content: center;
 }
 
 .display {
-    width: 30%;
-    height: 250px;
+    display: flex;
+    width: 50%;
+    height: fit-content;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     text-align: center;
+    justify-content: center;
+}
+
+.display img {
+    width: 300px;
+    padding: 10px;
+}
+
+figcaption {
+    color: white;
+    padding-bottom: 5px;
 }
 
 .project hr{
@@ -33,12 +46,8 @@
     color: white;
 }
 
-.project:nth-of-type(odd){
-    justify-content: left;
-}
-
-.project:nth-of-type(even){
-    justify-content: right;
+.aboutproj p {
+    padding: 5px;
 }
 
 .projtitle{

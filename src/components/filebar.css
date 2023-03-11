@@ -45,3 +45,8 @@
     color: #949494;
 }
 
+@media(max-width: 500px) {
+    .filebar{ 
+        display: none;
+    }
+}

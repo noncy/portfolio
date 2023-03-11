@@ -69,3 +69,30 @@ li{
 .selectedside {
     background-color: #2a2d2e;
 }
+
+@media(max-width: 500px) {
+    .sidebar h3{
+        font-size: 12px;
+        padding: 10px 0 5px 0;
+    }
+
+    .sidebar hr {
+        width: 90%;
+    }
+
+    .folderhover {
+        font-size: 11px;
+        text-indent: -5px;
+    }
+
+    .folders {
+        text-indent: -6px;
+        padding-right: 2px;
+    }
+
+    .files {
+        font-size: 12px;
+        padding: 5px 2px 0 0;
+
+    }
+}
