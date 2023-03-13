@@ -2,6 +2,7 @@ import React from 'react';
 import noncy from '../svg/noncy.png'
 import right from '../svg/right.svg'
 import './contact.css';
+import resume from '../svg/resume.pdf';
 
 class Card extends React.Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class Card extends React.Component {
                     <Cont ico = "mail" contactinfo = "Email" linkpath = "mailto:nancy@noncy.dev"/>
                     <Cont ico = "linkedin" contactinfo = "Linkedin" linkpath= "https://www.linkedin.com/in/lenancy/"/>
                     <Cont ico = "git" contactinfo = "Github" linkpath= "https://github.com/noncy"/>
-                    <Cont ico ="resume" contactinfo="Resume"/>
+                    <Cont ico ="resume" contactinfo="Resume" linkpath={resume}/>
                 </ul>
             </div> 
         );  
