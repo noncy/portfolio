@@ -7,6 +7,11 @@
 
 body {
     background-color: #201c1c;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display:none;
 }
 
 .bars {
