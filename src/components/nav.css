@@ -1,6 +1,9 @@
 .navbar {
     display: flex;
-    width: 100%;
+    min-width: 100vw;
+    min-width: fill-available;
+    min-width: -webkit-fill-available;
+    min-width: -moz-available;
     align-items: center;
     background-color:#403c3c;
     justify-content: center;

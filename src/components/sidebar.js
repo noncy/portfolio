@@ -54,7 +54,7 @@ class Sidebar extends React.Component {
     render() {
         return(
             <div className='sidebar'>
-                <h3>EXPLORER</h3>     
+                <button className='sidebarbtn'>EXPLORER</button>     
                 <div className="current">
                     <Folder isOpen = {true} foldername = {'OPEN PAGES'}>
                         {this.props.openFiles.map((file) => {

@@ -248,23 +248,19 @@ input:hover{
     cursor: help;
 }
 
-/* @media(max-width: 500px) {
+@media(max-width: 1450px) {
     .aboutme {
-        max-width: 500px;
+        display: flex;
+        justify-content: start;
+        overflow-y: scroll;
     }
 
-    .title-header {
-        font-size: 20px;
-        width: 30%;
+    .title-header{
+        top: 0;
     }
-
     .cards {
+        display: flex;
         flex-direction: column;
+        padding: 10px;
     }
-
-    .left, .middle, .right, .left .back, .middle .back, .right .back {
-        width: 200px;
-        height: 250px;
-    }
-} */
-
+}

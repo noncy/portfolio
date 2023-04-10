@@ -1,11 +1,11 @@
 .homepage {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     font-size: 12px;
 }
 
 .welcome {
-  width: 100%;
+  width: 100vw;
   height: 90vh;
   display: flex;
   flex-direction: row;
@@ -132,6 +132,18 @@
   }
   100% {
     transform: translateY(-117px);
+  }
+}
+
+@media(max-width: 1450px) {
+  .homecontent{
+    overflow-x: hidden;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 }
 

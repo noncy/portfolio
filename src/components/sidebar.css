@@ -1,17 +1,27 @@
 .sidebar{
+    margin: 0;
     background-color: #282424;
     width: 150px;
     color: #bbbbbb;
     padding-left: 20px;
     font-size: 20px;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
     font-family: Verdana;
 }
 
-.sidebar h3{
+.sidebarbtn{
     font-weight: 100;
     font-size: 15px;
-    padding: 10px;
+    background-color: transparent;
+    color: #bbbbbb;
+    border: none;
+}
+
+.sidebarbtn:hover{
+    color: white;
 }
 
 hr{
@@ -71,11 +81,6 @@ li{
 }
 
 @media(max-width: 500px) {
-    .sidebar h3{
-        font-size: 12px;
-        padding: 10px 0 5px 0;
-    }
-
     .sidebar hr {
         width: 90%;
     }

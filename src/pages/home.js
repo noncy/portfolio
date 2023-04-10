@@ -54,6 +54,10 @@ class Home extends React.Component {
                         <span className="orange">'portfolio'</span>
                         <span>;</span>
                     </div>
+                    <div className="import">
+                        <span className="gray"> 2 </span>
+                        <span className="gray">//TODO responsive design for mobile and smaller screens</span>
+                    </div>
                     <div className="welcome">
                         <div className="circle">
                             <img src={nancy} alt="nancy"/>
